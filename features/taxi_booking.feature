@@ -13,12 +13,12 @@ Feature: Taxi selection by proximity
           | taxi3    | Vaksali 6   |
           | taxi4    | Umera 1     |
           | taxi5    | Ringtee 75  |
-    And I want to go from "< pickup_address>" to "< dropoff_address>"
+    And I want to go from "<pickup_address>" to "<dropoff_address>"
     And I open STRS' web page
     And I enter the booking information
     When I summit the booking request
-    Then I should be notified that my taxi will arrive in "< time_to_pickup>"
-    And that the estimated trip duration will be of "< trip_duration>"
+    Then I should be notified that my taxi will arrive in "<time_to_pickup>"
+    And that the estimated trip duration will be of "<trip_duration>"
 
     Examples:
         | pickup_address   | dropoff_address | time_to_pickup | trip_duration |

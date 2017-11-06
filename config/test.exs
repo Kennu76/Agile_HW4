@@ -8,7 +8,7 @@ config :takso, Takso.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
-
+config :takso, :http_client, Takso.HTTPoisonMock
 # Configure your database
 config :takso, Takso.Repo,
   adapter: Ecto.Adapters.Postgres,

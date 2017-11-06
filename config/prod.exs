@@ -18,7 +18,7 @@ config :takso, Takso.Endpoint,
 
 # Do not print debug messages in production
 config :logger, level: :info
-
+config :takso, :http_client, HTTPoison
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key

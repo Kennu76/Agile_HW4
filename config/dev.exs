@@ -34,6 +34,7 @@ config :takso, Takso.Endpoint,
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
+
       ~r{web/views/.*(ex)$},
       ~r{web/templates/.*(eex)$}
     ]
@@ -54,3 +55,6 @@ config :takso, Takso.Repo,
   database: "takso_dev",
   hostname: "localhost",
   pool_size: 10
+
+
+config :takso, :http_client, HTTPoison
